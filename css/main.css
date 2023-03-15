@@ -1,0 +1,12 @@
+:root {
+  --clr-white: 255, 255, 255;
+  --clr-accent: 251, 116, 19;
+  --clr-text-main: 149, 158, 172;
+  --clr-radio-bg: 124, 135, 152;
+  --clr-card-bg: 37, 45, 55;
+  --clr-body-bg: 18, 20, 23;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+}
