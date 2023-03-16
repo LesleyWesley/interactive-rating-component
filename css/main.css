@@ -7,6 +7,59 @@
   --clr-body-bg: 18, 20, 23;
 }
 
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 body {
   font-family: "Overpass", sans-serif;
+  background: rgb(var(--clr-body-bg));
+  color: rgb(var(--clr-text-main));
+  font-size: .9rem;
+  width: 100%;
+  margin: 0;
+  height: 100vh;
+}
+
+.card {
+  background-color: rgb(var(--clr-card-bg));
+  width: 90%;
+  border-radius: 1rem;
+}
+
+.card-container {
+  margin: 1.5rem;
+}
+
+.star-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: rgba(var(--clr-radio-bg), 25%);
+}
+
+h1 {
+  color: rgb(var(--clr-white));
+}
+
+/*Radio Button Section */
+
+.radio-button-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/*======================*/
+
+button {
+  display: block;
+  width: 100%;
 }
