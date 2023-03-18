@@ -7,6 +7,12 @@
   --clr-body-bg: 18, 20, 23;
 }
 
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
 .flex-center {
   display: flex;
   justify-content: center;
@@ -19,6 +25,7 @@ body {
   background: rgb(var(--clr-body-bg));
   color: rgb(var(--clr-text-main));
   font-size: .9rem;
+  line-height: 1.25rem;
   width: 100%;
   margin: 0;
   height: 100vh;
@@ -41,6 +48,7 @@ body {
   width: 3rem;
   aspect-ratio: 1;
   border-radius: 50%;
+  margin-bottom: 2rem;
   background: rgba(var(--clr-radio-bg), 25%);
 }
 
@@ -55,8 +63,37 @@ h1 {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  margin: 1rem 0;
 }
 
+.single-radio-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.form-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  position: absolute;
+}
+
+input[type="radio"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #FFF;
+  margin: 0;
+  font: inherit;
+  background: rgba(var(--clr-radio-bg), 25%);
+  width: 2.75rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  z-index: 2;
+  position: inherit;
+}
 /*======================*/
 
 button {
