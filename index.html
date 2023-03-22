@@ -25,8 +25,8 @@
     <main class="flex-center">
 
   <!-- Rating state start -->
-    <div class="rating-state card">
-        <div class=" card-container">
+    <div class="card">
+        <div class="card-container rating-state hide">
             <div class="star-container">
               <img src="images/icon-star.svg" alt="star icon" />
             </div>
@@ -55,24 +55,32 @@
                   <label class="form-control" for="5">5</label>
                 </div>
 
-
-
             </div>
             <button type="submit">Submit</button>
         </div>
-    </div>
-
-
   <!-- Rating state end -->
 
-  <!-- Thank you state start -->
+    <!-- Thank you state start -->
+        <div class="card-container thank-you-state">
+            <img src="images/illustration-thank-you.svg" alt="computer icon" />
 
-    <div class="thank-you-state">
-        <div class="card">
+            <div class="submitted-rating-div">
+                You selected <span class="submitted-rating-span">4</span> out of 5
+            </div>
+
+            <h2>Thank you!</h2>
+
+            <p>We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
         </div>
+
+    <!-- Thank you state end -->
+
     </div>
 
-  <!-- Thank you state end -->
+
+
+
+
 
 
   </main>

@@ -20,6 +20,10 @@
   flex-direction: column;
 }
 
+.hide {
+  display: none;
+}
+
 body {
   font-family: "Overpass", sans-serif;
   background: rgb(var(--clr-body-bg));
