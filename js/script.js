@@ -58,6 +58,10 @@ document.addEventListener("keydown", function (e) {
   } else if (e.key === "5") {
     rating = 5;
   } else if (e.key === "Enter") {
-    revealThanks();
+    if (rating == 0) {
+      errorMessage.classList.remove('hide');
+    } else {
+      revealThanks();
+    }
   }
 })
